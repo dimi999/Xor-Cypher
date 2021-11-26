@@ -26,4 +26,4 @@ decrypted = ''
 for i, j in enumerate(binary):
     decrypted += chr(ord(j) ^ ord(password[i % len(password)]))
 
-print(decrypted, file=out)
+print(decrypted, file=out, end='')
